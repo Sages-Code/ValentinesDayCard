@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 16px;
+    height:100vh;
+    background: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valentines_card {
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 4s;
+}
+
+.leftCorner_img{
+    width: 100px;
+    margin-top: 1px;
+    justify-content: center;
+
+}
+
+.front_img {
+    width: 400px;
+    margin-right: -50px;
+    margin-left: -50px; 
+    margin-top: 100px;
+    position: relative; 
+}
+
+.inside_img {
+    width: 300px;
+    margin-right: -50px;
+    margin-left: -50px; 
+    margin-top: 20px;
+    position: relative; 
+    padding-bottom: 5px;
+}
+
+.valentines_card:hover .front_card{
+    transform: rotateY(-160deg); 
+} 
+.valentines_card:hover .front_text {
+    display: none;
+}
+.front_text, .inside_text{
+    color: azure;
+    font-family: "lobster", serif;
+    font-size: 24px;
+}
+
+.front_card {
+    position: relative;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 16px;
+    background-color: rgb(109, 109, 109);
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #a50b0b;
+    width: 450px;
+    height: 800px;
+}
+.inside_card {
+    position: absolute;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #a50b0b;
+    width: 450px;
+    height: 800px;
+    z-index:-1;
+    left:0;
+    top:0;
+
+}
+.valentines_card audio {
+    display: none;
+}
+
+.valentines_card:hover .front_img {
+    display: none;
+}
+.inside_card audio {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.audio{
+    align-items: center;
+}
+
+p{
+    font-size: medium;
+}
+
+.buttons{
+    border: none;
+    color: rgb(223, 153, 208);
+    text-align: center;
+    font-size: 16px;
+}
+
+.button1{
+    background-color: pink;
+    border-radius: 8px;
+    color: black;
+}
+.button1:hover{
+    background-color: rgb(189, 114, 126);
+    border-radius: 8px;
+    color: black;
+}
+.button2{
+    background-color: pink;
+    border-radius: 8px;
+    color: black;
+}
+.button2:hover{
+    background-color: rgb(189, 114, 126);
+    border-radius: 8px;
+    color: black;
+}
